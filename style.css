@@ -267,10 +267,14 @@ section {
 }
 
 .about-containers {
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: center; 
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 
 .about-details-container {
     justify-content: center;
@@ -317,8 +321,6 @@ section {
 
 #experience {
     position: relative;
-    padding: 50px 20px;
-    text-align: center;
 }
 
 .skills-grid {
