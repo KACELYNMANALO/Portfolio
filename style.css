@@ -541,3 +541,15 @@ footer p {
 .icon:hover {
   transform: scale(1.1);
 }
+
+.modal-content.team-modal-content {
+  width: 400px;
+  max-width: 95vw;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .modal-content.team-modal-content {
+    width: 95vw;
+    padding: 1rem;
+  }
+}
