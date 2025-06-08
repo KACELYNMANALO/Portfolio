@@ -205,6 +205,20 @@ section {
     margin-top: 2rem;
 }
 
+#typed-output {
+    display: inline-block;
+    min-width: 300px; 
+}
+
+.section-divider {
+    width: 100%;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border: none;
+    margin: 0; 
+}
+
 /* ICONS */
 
 .icon {
@@ -437,3 +451,5 @@ footer {
 footer p {
     text-align: center;
 }
+
+
