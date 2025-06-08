@@ -331,6 +331,10 @@ section {
     margin: auto 0;
 }
 
+.text-container p {
+    text-align: justify;
+}
+
 /* EXPERIENCE SECTION */
 
 #skills {
@@ -452,4 +456,88 @@ footer p {
     text-align: center;
 }
 
+/* TEAM MEMBERS */
 
+.team-members {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.team-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    position: relative;
+    margin-left: -10px; 
+}
+
+.team-img:first-child {
+    margin-left: 0; 
+}
+
+/* TEAM MEMBER MODAL */
+
+.member-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.team-modal-content {
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 5% auto;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.member-list-vertical {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.member-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.member-row .modal-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px; 
+}
+
+.member-name {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
