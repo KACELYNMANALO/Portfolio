@@ -94,4 +94,8 @@
   .text-container {
     text-align: justify;
   }
+  .modal-content.team-modal-content {
+    width: 95vw;
+    padding: 1rem;
+  }
 }
