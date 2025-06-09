@@ -603,6 +603,13 @@ footer p {
   color: gray;
 }
 
+.nav:focus,
+.nav:active {
+  color: #333;
+  background: rgba(255,255,255,0.85);
+  outline: none;
+}
+
 .member-list-vertical {
   margin-top: 20px;
   display: flex;
