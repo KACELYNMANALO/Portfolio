@@ -224,7 +224,7 @@
                 <h2 class="experience-sub-title project-title">Eurbin Mobile</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href=''">View</button>
+                    <button class="btn btn-color-2 project-btn" onclick="viewProject('eurbin-mobile')">View</button>
                 </div>
                 <div class="team-lang-container">
                 <div class="team-members" onclick="openTeamModal([jimuel, janRaven, kacelyn])">
@@ -245,7 +245,7 @@
                 <h2 class="experience-sub-title project-title">Rescue Ready</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KACELYNMANALO/RescueReady-Mobile-App.git'">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href=''">View</button>
+                    <button class="btn btn-color-2 project-btn" onclick="viewProject('rescue-ready')">View</button>
                 </div>
                 <div class="team-lang-container">
                 <div class="language-tags">
@@ -307,6 +307,18 @@
         <div id="member-list" class="member-list-vertical"></div>
     </div>
     </div>
+
+    <!-- Modal for Projects Images -->
+     <div id="imageModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <button class="nav prev" onclick="prevImage()">&#10094;</button>
+            <img id="modalImage" src="" alt="Project Image"/>
+            <button class="nav next" onclick="nextImage()">&#10095;</button>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalSubtitle">Project Subtitle</p>
+        </div>
+     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>

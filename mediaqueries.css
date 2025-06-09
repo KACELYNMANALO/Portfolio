@@ -94,8 +94,15 @@
   .text-container {
     text-align: justify;
   }
-  .modal-content.team-modal-content {
+  .modal-content .team-modal-content {
     width: 95vw;
     padding: 1rem;
+  }
+  .modal-content {
+    max-width: 98vw;
+    padding: 1rem;
+  }
+  #modalImage {
+    max-height: 40vh;
   }
 }

@@ -66,3 +66,68 @@ const kacelyn = {
     github: 'https://github.com/KACELYNMANALO',
     linkedin: 'https://www.linkedin.com/in/kacelyn-manalo-b687b92b7/'
 };
+
+const projectData = {
+    'rescue-ready': {
+        title: 'Rescue Ready',
+        subtitle: 'A mobile app for emergency preparedness.',
+        images: [
+            './assets/projects/rescue-ready/app.jpg',
+            './assets/projects/rescue-ready/homePage.jpg',
+            './assets/projects/rescue-ready/medKitPage.jpg',
+            './assets/projects/rescue-ready/kitResult.jpg',
+            './assets/projects/rescue-ready/menuNav.jpg',
+            './assets/projects/rescue-ready/disaster1.jpg',
+        ]
+    },
+    'eurbin-mobile': {
+        title: 'Eurbin Mobile',
+        subtitle: 'A mobile app for waste management.',
+        images: [
+            './assets/projects/eurbin-mobile/Leaderboard.jpg',
+            './assets/projects/eurbin-mobile/ProfilePage.jpg',
+            './assets/projects/eurbin-mobile/InstructionPage.jpg',
+            './assets/projects/eurbin-mobile/LocationPage.jpg',
+            './assets/projects/eurbin-mobile/SignUpPage.jpg',
+        ]
+    }
+};    
+
+let currentProject = '';
+let currentIndex = 0;
+
+function viewProject(projectName) {
+    currentProject = projectName;
+    currentIndex = 0;
+    // Set title and subtitle once
+    const data = projectData[currentProject];
+    document.getElementById("modalTitle").textContent = data.title;
+    document.getElementById("modalSubtitle").textContent = data.subtitle;
+    openModal();
+    showImage();
+}
+
+function openModal() {
+    document.getElementById("imageModal").classList.remove("hidden");
+}
+
+function closeModal() {
+    document.getElementById("imageModal").classList.add("hidden");
+}
+
+function showImage() {
+    const data = projectData[currentProject];
+    document.getElementById("modalImage").src = data.images[currentIndex];
+}
+
+function nextImage() {
+    const projectImages = projectData[currentProject];
+    currentIndex = (currentIndex + 1) % projectImages.images.length;
+    showImage();
+}
+
+function prevImage() {
+    const projectImages = projectData[currentProject];
+    currentIndex = (currentIndex - 1 + projectImages.images.length) % projectImages.images.length;
+    showImage();
+}
