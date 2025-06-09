@@ -582,7 +582,7 @@ footer p {
   font-size: 2.5rem;
   background: rgba(255,255,255,0.85);
   border: none;
-  color: #333;
+  color: #333; /* default dark */
   cursor: pointer;
   z-index: 2;
   padding: 0.2em 0.5em;
@@ -603,9 +603,13 @@ footer p {
   color: gray;
 }
 
-.nav:focus,
 .nav:active {
-  color: #333;
+  color: gray;           /* gray when pressed/clicked */
+  background: #e0e0e0;   /* optional: subtle background on click */
+}
+
+.nav:focus {
+  color: #333;           /* keep dark when focused */
   background: rgba(255,255,255,0.85);
   outline: none;
 }
