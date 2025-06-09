@@ -15,10 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
-          max-width: 100vw;
-          overflow-x: hidden;
-        }
+html, 
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 
 p {
     color: rgb(85, 85, 85);
@@ -340,7 +341,7 @@ section {
     text-align: justify;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
 #skills {
     position: relative;
@@ -417,7 +418,6 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
 }
 
 .contact-info-upper-container {
@@ -476,7 +476,7 @@ footer p {
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid white;
+    border: 2px solid #e0e0e0;
     box-shadow: 0 0 2px rgba(0,0,0,0.1);
     position: relative;
     margin-left: -10px; 
@@ -484,6 +484,46 @@ footer p {
 
 .team-img:first-child {
     margin-left: 0; 
+}
+
+.team-lang-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 1.5rem; 
+}
+
+.team-lang-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+}
+
+.language-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;   
+  width: 100%;                 
+}
+
+.tag {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 0.2rem 0.5rem;   
+  font-size: 0.7rem;        
+  font-weight: 500;
+  border-radius: 12px;     
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+  cursor: default;
 }
 
 /* TEAM MEMBER MODAL */
@@ -552,9 +592,5 @@ footer p {
   max-width: 95vw;
   box-sizing: border-box;
 }
-@media screen and (max-width: 600px) {
-  .modal-content.team-modal-content {
-    width: 95vw;
-    padding: 1rem;
-  }
-}
+
+
