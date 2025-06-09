@@ -117,16 +117,33 @@ function closeModal() {
 function showImage() {
     const data = projectData[currentProject];
     document.getElementById("modalImage").src = data.images[currentIndex];
+
+    // Hide or show arrows based on position
+    const prevBtn = document.querySelector('.nav.prev');
+    const nextBtn = document.querySelector('.nav.next');
+    if (currentIndex === 0) {
+        prevBtn.style.display = 'none';
+    } else {
+        prevBtn.style.display = '';
+    }
+    if (currentIndex === data.images.length - 1) {
+        nextBtn.style.display = 'none';
+    } else {
+        nextBtn.style.display = '';
+    }
 }
 
 function nextImage() {
     const projectImages = projectData[currentProject];
-    currentIndex = (currentIndex + 1) % projectImages.images.length;
-    showImage();
+    if (currentIndex < projectImages.images.length - 1) {
+        currentIndex++;
+        showImage();
+    }
 }
 
 function prevImage() {
-    const projectImages = projectData[currentProject];
-    currentIndex = (currentIndex - 1 + projectImages.images.length) % projectImages.images.length;
-    showImage();
+    if (currentIndex > 0) {
+        currentIndex--;
+        showImage();
+    }
 }
