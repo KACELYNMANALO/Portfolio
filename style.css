@@ -587,9 +587,9 @@ footer p {
   z-index: 2;
   padding: 0.2em 0.5em;
   border-radius: 50%;
-  transition: color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
   user-select: none;
-}
+} 
 
 .nav.prev {
   left: 10px;
