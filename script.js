@@ -72,7 +72,7 @@ const projectData = {
         title: 'Rescue Ready',
         subtitle: 'A mobile app for emergency preparedness.',
         images: [
-            './assets/projects/rescue-ready/app.jpg',
+            './assets/projects/rescue-ready/App.jpg',
             './assets/projects/rescue-ready/homePage.jpg',
             './assets/projects/rescue-ready/medKitPage.jpg',
             './assets/projects/rescue-ready/kitResult.jpg',
@@ -84,7 +84,6 @@ const projectData = {
         title: 'Eurbin Mobile',
         subtitle: 'A mobile app for waste management.',
         images: [
-            './assets/projects/eurbin-mobile/Leaderboard.jpg',
             './assets/projects/eurbin-mobile/ProfilePage.jpg',
             './assets/projects/eurbin-mobile/InstructionPage.jpg',
             './assets/projects/eurbin-mobile/LocationPage.jpg',
