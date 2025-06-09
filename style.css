@@ -582,7 +582,7 @@ footer p {
   font-size: 2.5rem;
   background: rgba(255,255,255,0.85);
   border: none;
-  color: #333; /* default dark */
+  color: #333;
   cursor: pointer;
   z-index: 2;
   padding: 0.2em 0.5em;
@@ -603,15 +603,16 @@ footer p {
   color: gray;
 }
 
+.nav:focus,
 .nav:active {
-  color: gray;           /* gray when pressed/clicked */
-  background: #e0e0e0;   /* optional: subtle background on click */
+  color: #333;
+  background: rgba(255,255,255,0.85);
+  outline: none;
 }
 
 .nav:focus {
-  color: #333;           /* keep dark when focused */
-  background: rgba(255,255,255,0.85);
   outline: none;
+  box-shadow: none;
 }
 
 .member-list-vertical {
