@@ -75,7 +75,7 @@ const janna = {
 const gail = {
     name: 'Gail Buenaventura',
     img: './assets/gail.jpg',
-    github: 'https://github.com/member4',
+    github: 'https://github.com/Mei-meichan',
     linkedin: 'https://www.linkedin.com/in/member4'
 };
 
