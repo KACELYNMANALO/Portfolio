@@ -117,11 +117,13 @@ const projectData = {
         title: 'MOMatters Mobile App',
         subtitle: 'A mobile app for pregnant women.',
         images: [
-            './assets/projects/eload/eloadApp.jpg',
-            './assets/projects/eload/landingPage.jpg',
-            './assets/projects/eload/homePage.jpg',
-            './assets/projects/eload/fillUp.jpg',
-            './assets/projects/eload/successfull.jpg',
+            './assets/projects/momatters/landingPage.png',
+            './assets/projects/momatters/postPage.png',
+            './assets/projects/momatters/kickCounter.png',
+            './assets/projects/momatters/notif.png',
+            './assets/projects/momatters/profilePage.png',
+            './assets/projects/momatters/shopPage.png',
+            './assets/projects/momatters/infoPage.png',
         ]
     },
 };    
