@@ -66,6 +66,18 @@ const kacelyn = {
     github: 'https://github.com/KACELYNMANALO',
     linkedin: 'https://www.linkedin.com/in/kacelyn-manalo-b687b92b7/'
 };
+const janna = {
+    name: 'Janna Soliza',
+    img: './assets/janna.jpg',
+    github: 'https://github.com/member3',
+    linkedin: 'https://www.linkedin.com/in/member3'
+};
+const gail = {
+    name: 'Gail Buenaventura',
+    img: './assets/gail.jpg',
+    github: 'https://github.com/member4',
+    linkedin: 'https://www.linkedin.com/in/member4'
+};
 
 const projectData = {
     'rescue-ready': {
@@ -89,7 +101,29 @@ const projectData = {
             './assets/projects/eurbin-mobile/LocationPage.jpg',
             './assets/projects/eurbin-mobile/SignUpPage.jpg',
         ]
-    }
+    },
+    'eload-mobile': {
+        title: 'E-loading Mobile App',
+        subtitle: 'A mobile app for prepaid electricity management.',
+        images: [
+            './assets/projects/eload/eloadApp.jpg',
+            './assets/projects/eload/landingPage.jpg',
+            './assets/projects/eload/homePage.jpg',
+            './assets/projects/eload/fillUp.jpg',
+            './assets/projects/eload/successfull.jpg',
+        ]
+    },
+    'momatters-mobile': {
+        title: 'MOMatters Mobile App',
+        subtitle: 'A mobile app for pregnant women.',
+        images: [
+            './assets/projects/eload/eloadApp.jpg',
+            './assets/projects/eload/landingPage.jpg',
+            './assets/projects/eload/homePage.jpg',
+            './assets/projects/eload/fillUp.jpg',
+            './assets/projects/eload/successfull.jpg',
+        ]
+    },
 };    
 
 let currentProject = '';
