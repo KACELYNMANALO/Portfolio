@@ -697,3 +697,33 @@ footer p {
   text-align: justify;
   margin-top: 0.5rem;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.heart {
+  color: red;
+  display: inline-block;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+}
